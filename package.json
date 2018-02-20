@@ -1,0 +1,28 @@
+{
+  "build-css": "stylus source/stylesheets/index.styl -o static/css",
+  "watch-css": "stylus source/stylesheets/index.styl -o static/css -w",
+  "clean": "rm -rf static/css && mkdir -p static/css",
+  "build": "npm run clean && npm run build-css",
+  "watch": "npm run clean && npm run watch-css & nodemon server -e js,jade",
+  "start": "node server",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "package",
+  "description": "A simple website in node js to accompany a blog post.",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RachanaSR/JavaScript.git"
+  },
+  "keywords": [
+    "javascript"
+  ],     
+  "author": "Rachana Rathnakar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RachanaSR/JavaScript/issues"
+  },
+  "homepage": "https://github.com/RachanaSR/JavaScript#readme"
+}
